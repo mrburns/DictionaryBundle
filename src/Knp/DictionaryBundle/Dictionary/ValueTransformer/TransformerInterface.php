@@ -2,19 +2,11 @@
 
 namespace Knp\DictionaryBundle\Dictionary\ValueTransformer;
 
-interface TransformerInterface
-{
-    /**
-     * @param mixed $value
-     *
-     * @return bool
-     */
-    public function supports($value);
+use Knp\DictionaryBundle\Dictionary\ValueTransformer;
 
-    /**
-     * @param mixed $value
-     *
-     * @return mixed
-     */
-    public function transform($value);
+/**
+ * @deprecated Knp\DictionaryBundle\Dictionary\ValueTransformer\TransformerInterface is deprecated and will be unsupported as of version 2.1, use Knp\DictionaryBundle\Dictionary\ValueTransformer instead.
+ */
+interface TransformerInterface extends ValueTransformer
+{
 }
