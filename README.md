@@ -5,6 +5,30 @@ DictionaryBundle
 
 Are you often tired to repeat static choices like gender or civility in your apps ?
 
+
+## This is a fork
+
+This bundle is a fork. The motivation for forking it is the following:
+- Getting a stable release (2.0)
+- Adding Symfony 4 compatibility
+- Ensure a future maintenance of the project
+
+As today we still hope that the main project will reborn. There is also a lot of work to achieve
+to release all unreleased features.
+
+That's why to install this fork you need to add the following lines to your `composer.json` file.
+
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/biig-io/DictionaryBundle"
+        }
+    ]
+}
+```
+
 ## Requirements
 - Symfony >= 2.8
 
@@ -30,9 +54,8 @@ $bundles = array(
 
 You can ping us if need some reviews/comments/help:
 
- - [@AntoineLelaisant](https://github.com/AntoineLelaisant)
- - [@PedroTroller](https://github.com/PedroTroller)
- - [@Shivoham](https://github.com/Shivoham)
+ - [@Nek-](https://github.com/Nek-)
+ - [@babeou](https://github.com/babeou)
 
 ## Basic usage
 Define dictionaries in your config.yml file:
@@ -43,7 +66,7 @@ knp_dictionary:
             - Foo           # your dictionary content
             - Bar
             - Baz
-            
+
 ```
 You will be able to retreive it trough the dictionary registry service:
 ```php
@@ -172,7 +195,7 @@ The KnpDictionaryBundle comes with a [faker provider](https://github.com/fzanino
 
 ### Alice
 
-To register the provider in [nelmio/alice](https://github.com/nelmio/alice), you can follow the [official documentation](https://github.com/nelmio/alice/blob/master/doc/customizing-data-generation.md#add-a-custom-faker-provider-class) 
+To register the provider in [nelmio/alice](https://github.com/nelmio/alice), you can follow the [official documentation](https://github.com/nelmio/alice/blob/master/doc/customizing-data-generation.md#add-a-custom-faker-provider-class)
 
 or ...
 
