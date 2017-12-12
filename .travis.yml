@@ -30,7 +30,6 @@ branches:
         - master
         - 1.x
 
-
 before_script:
     - composer update --prefer-source $COMPOSER_FLAGS
 
